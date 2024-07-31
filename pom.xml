@@ -59,9 +59,12 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+		
+		
 	</dependencies>
 
 	<build>
+		<finalName>boot-docker</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -76,7 +79,9 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>First-rest-api</finalName>
+		
+	
+		
 	</build>
 
 </project>
