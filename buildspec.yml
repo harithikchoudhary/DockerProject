@@ -5,16 +5,16 @@ phases:
       java: corretto8
   pre_build:
     commands:
-      - echo In the pre_build phase...
+    - echo In the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
-      - mvn package
-      - echo Build completed on `date`
+    - echo Build started on `date`
   post_build:
     commands:
-      - mv target/boot-docker.jar boot-docker.jar
+    - echo Build completed on `date`
+    - mvn package
+    - mv target/bootdocker.jar bootdocker.jar
 artifacts:
   files:
-    - boot-docker.jar
+  - bootdocker.jar
   discard-paths: yes
