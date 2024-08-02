@@ -12,9 +12,9 @@ phases:
   post_build:
     commands:
     - echo Build completed on `date`
-    - mvn package
+    - mvn clean package
     - mv target/bootdocker.jar bootdocker.jar
 artifacts:
   files:
-  - bootdocker.jar
+    - target/bootdocker.jar
   discard-paths: yes
